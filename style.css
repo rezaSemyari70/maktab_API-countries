@@ -1,0 +1,11 @@
+.container-fluid{
+    padding: 20px 60px !important;
+}
+
+.header{
+    background-color: rgb(36, 36, 36);
+}
+select{
+    width: 600px;
+}
+
