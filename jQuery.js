@@ -12,5 +12,12 @@ $(document).ready(function () {
         }
     });
 
-   
+    $('#select-country').change(function (event) {
+        $.ajax({
+            url: `https://restcountries.eu/rest/v2/alpha/${$(this).val()}`,
+            "method": "GET"
+        }).done(function (response) {
+            $('#flag').attr('src', response.flag);
+        })
+    })
 })
