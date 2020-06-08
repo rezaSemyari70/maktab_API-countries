@@ -32,3 +32,29 @@ img{
     font-size: 100px;
 }
 
+#info-country{
+    color: white;
+    font-weight: bold;
+    background-color: #3c3c3c;
+}
+#info-country{
+    padding-top: 10px;
+}
+
+#info-country span{
+    display: flex;
+}
+
+#info-country span p:first-child{
+    font-size: 14px !important;
+    color: yellow !important;
+    margin-right: 5px;
+    
+}
+
+#info-country span p{
+    margin-bottom: 0px;
+}
+
+
+
