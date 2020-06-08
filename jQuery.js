@@ -17,7 +17,12 @@ $(document).ready(function () {
             url: `https://restcountries.eu/rest/v2/alpha/${$(this).val()}`,
             "method": "GET"
         }).done(function (response) {
+            debugger
             $('#flag').attr('src', response.flag);
+            $('#call-code').html(
+                `<p class="call-code">${response.callingCodes}</p>`
+                
+            )
         })
     })
 })

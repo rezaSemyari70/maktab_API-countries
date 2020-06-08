@@ -13,3 +13,22 @@ img{
     width: 450px;
     height: 280px;
 }
+
+.head-Calling-Code{
+    height: 50px;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.title-Callign-Code{
+    font-size: 15px;
+    color: white;
+}
+
+#call-code{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+}
+
