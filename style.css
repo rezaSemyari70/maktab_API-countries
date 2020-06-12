@@ -15,6 +15,15 @@ select{
     width: 600px;
 }
 
+#select-country{
+    padding: 2px;
+    outline: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(124, 123, 123);
+}
+
 .bgContent{
     background-color: rgb(179, 179, 179);
 }
