@@ -15,6 +15,10 @@ select{
     width: 600px;
 }
 
+.bgContent{
+    background-color: rgb(179, 179, 179);
+}
+
 img{
     width: 450px;
     height: 220px;
@@ -73,5 +77,29 @@ img{
     height: 250px;
 }
 
+.weatherIcon{
+    width: 100px;
+    height: 100px;
+}
 
+
+#weatherInfo span{
+    display: flex;
+}
+
+#weatherInfo span p:first-child , p:nth-child(3){
+    font-size: 14px !important;
+    font-weight: bold;
+    color: rgb(39, 39, 39) !important;
+    margin-right: 5px;  
+}
+
+#weatherInfo span p:nth-child(2){
+    color: rgb(165, 212, 102);
+    font-weight: bold;
+}
+
+#weatherInfo span p{
+    margin-bottom: 4px;
+}
 

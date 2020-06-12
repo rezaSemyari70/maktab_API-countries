@@ -30,6 +30,22 @@ $(document).ready(function () {
             <span><p>Languages:</p><p>${response.languages[0].name}</p></span>
             <span><p>Timezone:</p><p>${response.timezones[0]}</p></span>
             `)
+
+            $.ajax({
+                url: `http://api.openweathermap.org/data/2.5/weather?q=${response.capital}&appid=44b1fe8a6c0207544cdd674445971577`,
+                'method': 'GET',
+            }).done(function (response) {
+                $('#weatherIcon').html(`
+                  <img class="weatherIcon" src="http://openweathermap.org/img/wn/${
+                    response.weather[0].icon}@2x.png">`);
+
+                $('#weatherInfo').html(`
+                    <span><p>wind speed:</p> <p>${response.wind.speed}</p><p>MS</p></span>
+                    <span><p>temperature:</p> <p>${response.main.temp}S</p><p>c</p></span>
+                    <span><p>humadity:</p> <p>${response.main.humidity}</p><p>%</p></span>
+                    <span><p>visibility:</p> <p>${response.visibility}</p><p>m</p></span>
+                `)
+            });
         })
 
     })
